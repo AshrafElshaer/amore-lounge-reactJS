@@ -1,0 +1,119 @@
+.header {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    background: url(/src/images/mobile-header-bg.png) center no-repeat;
+    background-size: cover;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+
+    @include breakpoint-md {
+        background: url(/src/images/desktop-header-bg.jpg) center no-repeat;
+        background-size: cover;
+
+    }
+
+    &__intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-block: auto;
+        padding-inline: clamp(1rem, 4vw, 3rem);
+
+        @include breakpoint-lg {
+            text-align: left;
+            max-width: 60%;
+        }
+
+        &--title {
+            font-size: clamp(1.5rem, 5vw, 2.5rem);
+            font-family: $ff-heading;
+        }
+
+        &--subtitle {
+            margin-block: 1rem;
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            font-weight: 400;
+        }
+
+        .cta {
+            color: #fff;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            padding: 1rem 3rem;
+            margin: 1.5rem auto;
+            width: 12.5rem;
+            border-radius: 2rem;
+            background-color: $accent;
+            display: flex;
+            align-items: center;
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+
+            @include breakpoint-lg {
+                margin: 1.5rem 0;
+            }
+
+            &:hover {
+                box-shadow: 0px 0px 30px 9px rgba(250, 71, 83, 0.5);
+                transform: translateY(-10px);
+            }
+
+
+            &__icon {
+                margin-left: 1rem;
+            }
+
+        }
+
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        height: 15rem;
+        background-color: $accent;
+
+        @include breakpoint-md {
+            width: 70%;
+            height: 10rem;
+            margin-left: auto;
+            flex-direction: row;
+        }
+
+        &--title {
+            @include breakpoint-md {
+                margin-block: 1.5rem;
+            }
+        }
+        p{
+            margin-block: 0.5rem;
+            font-size: 1rem;
+            letter-spacing: 2px;
+        }
+
+        .social {
+            &__navbar {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+
+                &__list--link {
+                    color: #fff;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+
+}

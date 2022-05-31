@@ -1,0 +1,18 @@
+@import 'abstracts/normalize',
+'abstracts/variables',
+'abstracts/breakpoints',
+'abstracts/global';
+
+
+
+@import '../components/navbar/navbar.scss',
+        '../components/previewCard/previewCard';
+
+
+
+
+
+@import '../containers/header/header.scss',
+        '../containers/AboutUs/about';
+
+

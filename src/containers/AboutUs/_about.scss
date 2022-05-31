@@ -1,0 +1,33 @@
+.about{
+    padding: 1rem;
+    &__header{
+        text-align: center;
+        margin: 3rem;
+
+        &--icon{
+            font-size: 2rem;
+            
+            display: inline-block;
+            &:first-of-type{
+                transform: rotate(-45deg);
+            }
+            &:nth-of-type(2){
+                margin: auto 1rem;
+                color: $accent;
+            }
+            &:last-of-type{
+                transform: rotate(135deg);
+            }
+
+        }
+    }
+
+    .preview{
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+}
