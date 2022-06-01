@@ -1,18 +1,30 @@
 import { useState } from "react";
 import NavbarList from "./NavbarList"
-import logo from "../../images/logo.webp";
+// import logo from "../../images/logo.webp";
+import IMAGES from "../../images/index.js";
 
 const Navbar = () => {
 const navbarPages = ['Home','About','Gallary','Contact Us']
 const [isActive , setIsActive] = useState(false);
+const [navbarBg , setNavbarBg] = useState('transparent');
 const handleToggle = () =>{
     setIsActive(!isActive);
  };
  const handleLinkClick = () => {
      if(window.innerWidth <= 768) { setIsActive(!isActive) }
  }
+ const onScroll = ()=>{
+    if(window.scrollY >= 660) {
+        setNavbarBg('#17181c');
+    }else{
+        setNavbarBg('transparent');
+    }
+}
+ window.addEventListener('scroll', onScroll)
 
-const logoImg = <img className="navbar__brand--img" src={logo} alt="logo" />
+ console.log(IMAGES)
+
+const logoImg = <img className="navbar__brand--img" src={IMAGES.logo} alt="logo" />
 
 const toggleBtn = <svg className={isActive ? 'ham hamRotate active' : 'ham hamRotate ' } viewBox="0 0 100 100" width="60" onClick={handleToggle}>
     <path className="line top"
@@ -27,7 +39,7 @@ const toggleBtn = <svg className={isActive ? 'ham hamRotate active' : 'ham hamRo
 
 return (
 
-<nav className="navbar">
+<nav className="navbar" style={{ backgroundColor : navbarBg}}>
     <ul className="navbar__nav">
         <NavbarList className='navbar__brand' url='home' text={logoImg} />
         <ul className={isActive ? 'navbar__main active' : 'navbar__main' }>

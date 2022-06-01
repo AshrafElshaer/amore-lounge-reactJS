@@ -2,11 +2,11 @@
     
     width: 10rem;
     height: 13rem;
-    // margin: auto;
     overflow: hidden;
     position: relative;
     border-radius: 1rem;
     box-shadow: 1px 0px 50px 0px rgba(0,0,0,0.5);
+    cursor: pointer;
     &::before{
         content: '';
         position: absolute;

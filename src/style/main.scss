@@ -5,14 +5,15 @@
 
 
 
-@import '../components/navbar/navbar.scss',
-        '../components/previewCard/previewCard';
+@import '../components/navbar/navbar',
+        '../components/previewCard/previewCard',
+        '../components/sectionHeader/sectionHeader';
 
 
 
 
 
-@import '../containers/header/header.scss',
+@import '../containers/header/header',
         '../containers/AboutUs/about';
 
 
