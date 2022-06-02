@@ -536,6 +536,10 @@ li {
   margin-block: 4rem;
 }
 
+.section-header h1 {
+  font-size: 2rem;
+}
+
 .section-header--icon {
   font-size: 2rem;
   display: inline-block;
