@@ -22,7 +22,6 @@ const handleToggle = () =>{
 }
  window.addEventListener('scroll', onScroll)
 
- console.log(IMAGES)
 
 const logoImg = <img className="navbar__brand--img" src={IMAGES.logo} alt="logo" />
 

@@ -14,7 +14,7 @@ return (
     <h1 className="header__intro--title">Creating Memories, A Bit More Than A Coffee </h1>
     <p className="header__intro--subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae maiores rem iusto? Quae sequi pariatur dolorum, unde modi error rem aut architecto dicta facere voluptatem cumque praesentium cupiditate ad doloribus?</p>
     <a href='https://drive.google.com/file/d/1hDw_GYnEgjS2sN1kH1t5UYLuz_BmZI1M/view?usp=sharing' className="cta"
-      target='_blank' rel="noreferrer noopener">
+      target='_blank' rel="noreferrer noopener" >
       Menu
       < MdMenuBook className='cta__icon' />
     </a>
