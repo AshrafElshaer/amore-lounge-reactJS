@@ -1,10 +1,9 @@
 import { useState } from "react";
 import NavbarList from "./NavbarList"
-// import logo from "../../images/logo.webp";
 import IMAGES from "../../images/index.js";
 
 const Navbar = () => {
-const navbarPages = ['Home','About','Gallary','Contact Us']
+const navbarPages = ['Home','About','Testimonial','Gallary','Contact Us']
 const [isActive , setIsActive] = useState(false);
 const [navbarBg , setNavbarBg] = useState('transparent');
 const handleToggle = () =>{

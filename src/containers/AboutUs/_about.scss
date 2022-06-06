@@ -1,5 +1,9 @@
 .about {
     padding: 1rem;
+    @include breakpoint-sm{
+        max-width: 90%;
+        margin: auto;
+    }
 
 
     .preview {
@@ -31,7 +35,7 @@
             grid-row: 1;
             grid-column: 2;
             @include breakpoint-md{
-                margin: auto;
+                margin: 0 0  auto 0;
             }
             &--title{
                 font-size: 1.5rem;

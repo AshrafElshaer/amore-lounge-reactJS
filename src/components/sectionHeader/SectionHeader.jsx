@@ -1,10 +1,10 @@
 import {GiCoffeeCup , GiBranchArrow } from 'react-icons/gi';
 
 
-const SectionHeader = ({  header  }) => {
+const SectionHeader = ({  title  }) => {
   return (
     <div className="section-header">
-      <h1>{header}</h1>
+      <h1>{title}</h1>
       <GiBranchArrow className="section-header--icon"/>
       <GiCoffeeCup className="section-header--icon"/>
       <GiBranchArrow className="section-header--icon"/>

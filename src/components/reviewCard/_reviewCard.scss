@@ -1,0 +1,38 @@
+.reviewCard{
+    text-align: center;
+    line-height: 1.6;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: $clr-white;
+    max-width: 25rem;
+    aspect-ratio: 1/1;
+    box-shadow: 1px 0px 50px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-in-out;
+    &:hover{
+        transform: scale(1.05) translateY(-10px);
+        box-shadow: 1px 0px 50px 0px rgba(0, 0, 0, 0.3);
+    }
+    
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 1.2rem;
+        &--img{
+            width: 5rem;
+            margin: 1rem auto;  
+            position: relative;
+        }
+        &--name{
+            font-weight: bold;
+        }
+        &--rating{
+            color: $clr-red;
+        }
+    }
+    &__text{
+        font-family: $ff-content;
+    }
+}

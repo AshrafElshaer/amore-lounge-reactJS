@@ -6,7 +6,7 @@ import SectionHeader from "../../components/sectionHeader/SectionHeader";
 const AboutUs = () => {
 return (
 <section className="about" id="about">
-  <SectionHeader header='Our Speciality' />
+  <SectionHeader title='Our Speciality' />
 
   <div className="preview">
     <PreviewCard img={IMAGES.aboutUs1} title={'hookah'} subTitle={'try our premuim pineapple head hookah , try ourpremuim pineapple head hookah'} />
