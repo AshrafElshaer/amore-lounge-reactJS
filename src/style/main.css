@@ -364,11 +364,6 @@ li {
           transition-delay: 0.3s;
 }
 
-.navbar__list:nth-of-type(5) {
-  -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
-}
-
 @media (min-width: 768px) {
   .navbar__list {
     background-color: transparent;

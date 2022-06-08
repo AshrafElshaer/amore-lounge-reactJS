@@ -3,7 +3,7 @@ import NavbarList from "./NavbarList"
 import IMAGES from "../../images/index.js";
 
 const Navbar = () => {
-const navbarPages = ['Home','About','Testimonial','Gallary','Contact Us']
+const navbarPages = ['Home','About','Testimonial','Contact Us']
 const [isActive , setIsActive] = useState(false);
 const [navbarBg , setNavbarBg] = useState('transparent');
 const handleToggle = () =>{
@@ -13,7 +13,7 @@ const handleToggle = () =>{
      if(window.innerWidth <= 768) { setIsActive(!isActive) }
  }
  const onScroll = ()=>{
-    if(window.scrollY >= 660) {
+    if(window.scrollY >= 720) {
         setNavbarBg('#17181c');
     }else{
         setNavbarBg('transparent');
