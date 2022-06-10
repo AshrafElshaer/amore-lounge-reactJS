@@ -3,6 +3,7 @@ import SocialMediaLink from "../../components/socialMediaLinks/SocialMediaLink";
 
 import { MdMenuBook } from 'react-icons/md';
 import { FaInstagram , FaFacebook , FaSnapchat } from 'react-icons/fa';
+import { GiBranchArrow } from 'react-icons/gi';
 
 
 const Header = () => {
@@ -23,9 +24,11 @@ return (
   <div className="header__info">
     <div className="header__info__hours">
       <h2 className="header__info--title">Operating Hours</h2>
-      <p>SUN - THU : 4PM - 12AM</p>
-      <p>FRI - SAT : 4PM - 2AM</p>
+      <p>SUN - THU <GiBranchArrow className="info-icon"/> 4PM - 12AM</p>
+      <p>FRI - SAT <GiBranchArrow className="info-icon"/> 4PM - 2AM</p>
+      
     </div>
+    <a href="tel:4697140004" className='header__info--phoneNumber' aria-label="Business Phone Number">+1 (469) 714-0004</a>
     <div className="header__info__socialMedia">
       <h2 className="header__info--title">Follow US</h2>
       <nav className="social">
@@ -40,6 +43,7 @@ return (
             <SocialMediaLink text={<FaSnapchat />} className='social__navbar__list--link' link={'https://www.facebook.com/'}/>
           </li>
         </ul>
+        
       </nav>
     </div>
   </div>

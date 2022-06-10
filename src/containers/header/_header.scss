@@ -79,7 +79,7 @@
         justify-content: space-around;
         align-items: center;
         text-align: center;
-        height: 15rem;
+        height: 16rem;
         background-color: $clr-red;
 
         @include breakpoint-md {
@@ -87,6 +87,23 @@
             height: 10rem;
             margin-left: auto;
             flex-direction: row;
+        }
+        &__hours{
+            p{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .info-icon{
+                transform: rotate(-45deg);
+                font-size: 1.5rem;
+                margin-inline: 1rem;
+            }
+        }
+        &--phoneNumber{
+            font-size: 1.3rem;
+            font-family: $ff-heading;
+            color: $clr-white;
         }
 
         &--title {

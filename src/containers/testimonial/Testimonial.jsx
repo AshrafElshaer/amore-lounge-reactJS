@@ -5,16 +5,13 @@ import ReviewCard from '../../components/reviewCard/ReviewCard';
 
 
 
-
-// https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJm0lJ8WETTIYRs7yShbXhTTY&key=AIzaSyB267VKpD4i88OanF5QB_i8rYQea0I6xv0&fields=review
-
-
 const Testimonial = () => {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
     setReviews(reviewsData.result.reviews);
   }, []);
+
    
     
   return (

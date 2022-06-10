@@ -3,7 +3,7 @@
     top: 0;
     width: 100%;
     z-index: 999;
-    transition: background-color 0.2s ease-in-out;
+    background-color: $clr-dark;
 
 
    
@@ -63,19 +63,19 @@
 
 
 
-        &::after {
-            content: '';
+        // &::after {
+        //     content: '';
 
-            position: absolute;
-            top: 7px;
-            left: -6rem;
-            background-color: $clr-white;
-            width: 12rem;
-            height: 3.5rem;
-            border-top-right-radius: 2rem;
-            border-bottom-right-radius: 2rem;
-            z-index: -1;
-        }
+        //     position: absolute;
+        //     top: 7px;
+        //     left: -6rem;
+        //     background-color: $clr-white;
+        //     width: 12rem;
+        //     height: 3.5rem;
+        //     border-top-right-radius: 2rem;
+        //     border-bottom-right-radius: 2rem;
+        //     z-index: -1;
+        // }
 
     }
 

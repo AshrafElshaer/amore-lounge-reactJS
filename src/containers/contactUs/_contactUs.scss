@@ -1,0 +1,93 @@
+.contact {
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+       
+        @include breakpoint-lg {
+            flex-direction: row;
+            max-width: 90vw;
+            margin: auto;
+
+        }
+    }
+
+    &__info {
+        padding: 1rem;
+        flex: 1;
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                font-size: 1.2rem;
+                margin-top: 2rem;
+                margin-bottom: 0.5rem;
+            }
+
+            &--input {
+                width: 100%;
+                height: 3rem;
+                border: none;
+                border-bottom: 2px solid $clr-gray;
+                border-radius: 0.5rem;
+                padding-inline: 0.5rem;
+                font-size: 1rem;
+                letter-spacing: 2px;
+                outline: none;
+                transition: border 0.2s ease-in-out;
+
+                &:focus {
+                    outline: none;
+                    border-bottom: 2px solid $clr-red;
+                }
+            }
+
+            &--message {
+                border: 1px solid $clr-gray;
+                outline: none;
+                border-radius: 0.5rem;
+                padding: 1rem;
+                resize: none;
+                margin-bottom: 1rem;
+
+                &:focus {
+                    outline: none;
+
+                }
+
+                
+            }
+            button{
+                width: 100%;
+                height: 3rem;
+                border: none;
+                border-radius: 0.5rem;
+                background-color: $clr-red;
+                color: $clr-white;
+                font-size: 1.2rem;
+                letter-spacing: 2px;
+                cursor: pointer;
+                transition: all 0.2s ease-in-out;
+                &:hover{
+                    background-color: #af3139;
+                }
+            }
+        }
+    }
+
+    &__map {
+        width: 100%;
+        flex: 3;
+    }
+
+    iframe {
+        border: none;
+        width: 100%;
+        height: 20rem;
+        @include breakpoint-lg{
+            height: 100%;
+        }
+    }
+}
