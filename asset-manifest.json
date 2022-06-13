@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/amore-lounge-reactJS/static/css/main.c7a6c968.css",
+    "main.js": "/amore-lounge-reactJS/static/js/main.e3147aa0.js",
+    "static/js/787.b29a89a8.chunk.js": "/amore-lounge-reactJS/static/js/787.b29a89a8.chunk.js",
+    "static/media/mobile-header-bg.png": "/amore-lounge-reactJS/static/media/mobile-header-bg.3ec8b69673745742e9e2.png",
+    "static/media/about-us-1.jpg": "/amore-lounge-reactJS/static/media/about-us-1.925007d859b9eb5b0fe0.jpg",
+    "static/media/about-us-2.jpg": "/amore-lounge-reactJS/static/media/about-us-2.5d1db7882ce01cfea682.jpg",
+    "static/media/desktop-header-bg.jpg": "/amore-lounge-reactJS/static/media/desktop-header-bg.7227e98311407ece5623.jpg",
+    "static/media/logo.webp": "/amore-lounge-reactJS/static/media/logo.a2dfc9e13c4c17ac80ca.webp",
+    "index.html": "/amore-lounge-reactJS/index.html",
+    "main.c7a6c968.css.map": "/amore-lounge-reactJS/static/css/main.c7a6c968.css.map",
+    "main.e3147aa0.js.map": "/amore-lounge-reactJS/static/js/main.e3147aa0.js.map",
+    "787.b29a89a8.chunk.js.map": "/amore-lounge-reactJS/static/js/787.b29a89a8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c7a6c968.css",
+    "static/js/main.e3147aa0.js"
+  ]
+}
